@@ -1,6 +1,8 @@
 import pytest
 
 from main import BooksCollector
+
+
 @pytest.fixture
 def dictionary():
     dictionary = BooksCollector()
@@ -12,5 +14,4 @@ def dictionary():
     dictionary.set_book_genre('Лисица и журавль', 'Мультфильмы')
     dictionary.set_book_genre('Маша и медведь', 'Мультфильмы')
     dictionary.set_book_genre('Шерлок Холмс', 'Детективы')
-
     return dictionary
